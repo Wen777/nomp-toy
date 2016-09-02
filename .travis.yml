@@ -1,0 +1,29 @@
+language: node_js
+
+node_js:
+  - "6"
+
+services:
+  - postgresql
+
+before_install:
+  - npm explore npm -g -- npm install node-gyp@latest
+
+env:
+  - CXX=g++-4.8
+addons:
+  apt:
+    sources:
+      - ubuntu-toolchain-r-test
+    packages:
+      - g++-4.8
+      - node-gyp
+
+install:
+  - npm install
+
+before_script:
+  - psql -c 'create database pool_api_test;' -U postgres
+
+script:
+  - npm test
