@@ -1,0 +1,23 @@
+{
+    "development": {
+        "username": "nomp",
+        "password": "nomp",
+        "database": "pool_api_development",
+        "host": "127.0.0.1",
+        "dialect": "postgres"
+    },
+    "test": {
+        "username": "postgres",
+        "password": null,
+        "database": "pool_api_test",
+        "host": "127.0.0.1",
+        "dialect": "postgres"
+    },
+    "production": {
+        "username": "nomp",
+        "password": "nomp",
+        "database": "pool_api_nomp",
+        "host": "127.0.0.1",
+        "dialect": "postgres"
+    }
+}
