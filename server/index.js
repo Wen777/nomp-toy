@@ -6,10 +6,14 @@ const app = express();
 
 // Midleware
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.urlencoded({
+  extended: true
+}));
 
 // Routers
+import poolRoute from '../routes/pool';
 // Set up route
+app.use(poolRoute);
 
 // Template engine
 // app.set('view engine', 'pug');
@@ -28,7 +32,9 @@ app.use(function(req, res, next) {
 });
 
 app.get('/v1/ping', function(req, res) {
-    res.status(200).json({'res': 'PONG!'});
+  res.status(200).json({
+    'res': 'PONG!'
+  });
 });
 
 // export default app;
