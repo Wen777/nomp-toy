@@ -27,4 +27,4 @@ before_script:
 
 script:
   - npm test
-  - npm test-api
+  - npm run start-test-server& npm run test-api
