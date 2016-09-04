@@ -1,5 +1,7 @@
 # nomp-toy
 
+[![Build Status](https://travis-ci.org/Wen777/nomp-toy.svg?branch=master)](https://travis-ci.org/Wen777/nomp-toy)
+
 This project is a RESTful api server which integrate with several mining pools.
 You can get the information of mining pool from this server.
 
@@ -13,10 +15,10 @@ desktop app (miner)
     |
     |             information
 back-end server --------------- nomp-toy server
-    |                      |
-MongoDB                    |---------------------
-                           |GPU mining          |
-                    uNOMP (mining pool)   Ethereum mining pool
+    |                               |
+MongoDB                             |---------------------
+                                    |GPU mining          |
+                                uNOMP (mining pool)   Ethereum mining pool
 ```
 
 ## Init

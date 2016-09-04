@@ -1,5 +1,8 @@
 language: node_js
 
+notifications:
+  -  email: false
+
 node_js:
   - "6"
 
@@ -27,4 +30,5 @@ before_script:
 
 script:
   - npm test
-  - npm run start-test-server& npm run test-api
+  - npm run start-test-server&
+  - sleep 5; npm run test-api
