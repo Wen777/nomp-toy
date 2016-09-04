@@ -9,9 +9,10 @@ You can get the information of mining pool from this server.
 ## Architecture
 
 ```
-desktop app
+desktop app (miner)
     |
-back-end server --- nomp-toy server
+    |             information
+back-end server --------------- nomp-toy server
     |                      |
 MongoDB                    |---------------------
                            |GPU mining          |
